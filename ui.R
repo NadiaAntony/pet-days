@@ -21,7 +21,7 @@ fluidPage(
   sidebarLayout(
     sidebarPanel(width = 2,
                  #debugging
-                 actionButton("browser", "Browser Switch"),
+                 actionButton("browser", "Debug Switch"),
                  
                  # display options for pet selection ####
                  uiOutput("all_pets"),

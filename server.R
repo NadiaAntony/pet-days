@@ -20,6 +20,9 @@ pet_records <- read_data("PetRecords.sqlite")
 data_dir <- file.path("assets", "data")
 
 function(input, output, session) {
+  observeEvent(input$browser, {
+    browser()
+  })
   # create options for pet selection radio button ####
   output$all_pets <- renderUI({
     pets <- pet_records$dimPets %>% 
